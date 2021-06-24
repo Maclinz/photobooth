@@ -1,4 +1,4 @@
-let apiKey = '563492ad6f9170000100000104606eb1c1244340bf2cede1c4a42568';
+let apiKey = '563492ad6f9170000100000104606eb1c1244340bf2cede1c4a42568';//Dont forget to add your own key
 const searchInput = document.querySelector('.search-input');
 const viewMore = document.querySelector('.view-more');
 const searchForm = document.querySelector('.search-form');
