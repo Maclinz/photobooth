@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #192232;
+  color: white;
+}
+
+.header {
+  min-height: 20vh;
+  width: 100%;
+  background-color: #25354C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.header .logo {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 570px) {
+  .header .logo {
+    font-size: 2rem;
+  }
+}
+
+.header .logo a {
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+}
+
+.search-form {
+  width: 30%;
+}
+
+@media screen and (max-width: 1300px) {
+  .search-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .search-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .search-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .search-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-form {
+    width: 80%;
+  }
+}
+
+.input-control {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.input-control input {
+  width: 80%;
+  padding: .4rem 1rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-color: #192232;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .input-control input {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+.input-control input:focus, .input-control input :active {
+  width: 100%;
+}
+
+.input-control button {
+  position: absolute;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  margin-left: -3rem;
+  background-color: #192232;
+  padding: 0 1rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.input-control button img {
+  height: 20px;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-row-gap: 6rem;
+  grid-column-gap: 1.2rem;
+  padding: 0 6rem;
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  main {
+    padding: 0 .1rem;
+  }
+}
+
+main .gallery {
+  background-color: #25354C;
+  height: 100%;
+}
+
+main .gallery .image-holder {
+  height: 100%;
+}
+
+main .gallery img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+main .gallery .profile {
+  background-color: #25354C;
+  margin-top: -.5rem;
+  padding: 1.5rem .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .gallery .profile a {
+  position: relative;
+  font-size: 1.3rem;
+}
+
+main .gallery .profile a:nth-child(1) {
+  color: #fff;
+}
+
+.view {
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.view button {
+  background-color: #25354C;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.view button:hover {
+  background-color: #fff;
+  color: black;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=style.css.map */
